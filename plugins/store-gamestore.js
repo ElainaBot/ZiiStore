@@ -1,7 +1,6 @@
 //percobaan
 let handler = async (m, { conn, command, text }) => {
-  let anu = '┌─────「 ⫹⫺ MENU GAMESTORE 」\n┃⫹⫺ FreeFire\n┃⫹⫺ MobileLegends\n┃⫹⫺ Pubg\n┃⫹⫺ SpeedsDrifters \n┃⫹⫺ ApexLegends\n┃⫹⫺ GenshinImpact\n┃⫹⫺ HonkaiImpact\n┃⫹⫺ CallOfDutyMobile\n┃⫹⫺ LeagueOfLegends\n┃⫹⫺ ArenaOfValor\n┃⫹⫺ OnePunchMan\n┃⫹⫺ Payment\n┃⫹⫺ FormatOrder\n┃⫹⫺ Promo\n┃⫹⫺ InfoUpdate\n┃⫹⫺ Tutorial (Cara.Melakukan.Pembelian)\n└────' 
-conn.sendBut(m.chat, anu, wm2, 'Format Order', `.${command}`, m)
+  let anu = '┌─────「 ⫹⫺ MENU GAMESTORE 」\n┃⫹⫺ FreeFire\n┃⫹⫺ MobileLegends\n┃⫹⫺ Pubg\n┃⫹⫺ SpeedsDrifters \n┃⫹⫺ ApexLegends\n┃⫹⫺ GenshinImpact\n┃⫹⫺ HonkaiImpact\n┃⫹⫺ CallOfDutyMobile\n┃⫹⫺ LeagueOfLegends\n┃⫹⫺ ArenaOfValor\n┃⫹⫺ OnePunchMan\n┃⫹⫺ Payment\n┃⫹⫺ FormatOrder\n┃⫹⫺ Promo\n┃⫹⫺ InfoUpdate\n┃⫹⫺ Tutorial (Cara.Melakukan.Pembelian)\n└────'
 }
 handler.command = /^gamestore$/i
 handler.owner = false
