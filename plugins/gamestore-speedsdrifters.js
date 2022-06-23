@@ -34,9 +34,9 @@ let handler = async m => m.reply(`
 ╰─────────────⬣
 `.trim()) // Tambah sendiri kalo mau
 
-handler.help = ['pubg']
+handler.help = ['speedsdrifters']
 handler.tags = ['gamestore']
-handler.command = /^pubg$/i
+handler.command = /^speedsdrifters$/i
 handler.register =false
 
 module.exports = handler
