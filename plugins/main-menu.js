@@ -66,7 +66,7 @@ const defaultMenu = {
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'absen', 'store', 'downloader', 'github', 'group', 'image', 'quotes', 'admin', 'info', 'islam', 'owner', 'info', 'stalk', 'shortlink', 'sticker', 'tools']
+  let arrayMenu = ['all', 'absen', 'store', 'downloader', 'github', 'group', 'image', 'quotes', 'admin', 'info', 'islam', 'owner', 'info', 'stalk', 'sticker']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
   'main': 'UTAMA',
@@ -83,8 +83,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   'owner': 'OWNER',
   'quotes' : 'QUOTES',
   'stalk': 'STALK',
-  'shortlink': 'SHORT LINK',
-  'tools': 'TOOLS',
   }
   if (teks == 'absen') tags = {
     'absen': 'ABSEN',
@@ -123,13 +121,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   'quotes' : 'QUOTES',
   }
   if (teks == 'stalk') tags = {
-  'stalk': 'STALK',
-  }
-  if (teks == 'shortlink') tags = {
-  'shortlink': 'SHORT LINK',
-  }
-  if (teks == 'tools') tags = {
-  'tools': 'TOOLS', 
+  'stalk': 'STALK', 
   }
 
 //━━━━━━━━[ DATABASE USER ]━━━━━━━━//
