@@ -1,4 +1,4 @@
-let handler = async m => m.reply(`
+let handler = async m => m.reply(`.${command}`, `
 ╭─㉿ 〔⫹⫺ MENU GAMESTORE〕 ㉿─
 ┃⫹⫺ FreeFire
 ┃⫹⫺ MobileLegends
