@@ -51,6 +51,13 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Menampilkan Menu All",
                   "rowId": '.? all'
                   }
+ }}), { userJid: m.participant || m.key.remoteJid, quoted: fkontak });
+    return await conn.relayMessage(
+        m.key.remoteJid,
+        template.message,
+        { messageId: template.key.id }
+    )
+    }
 handler.help = ['gamestore']
 handler.tags = ['store']
 handler.command = /^gamestore$/i
