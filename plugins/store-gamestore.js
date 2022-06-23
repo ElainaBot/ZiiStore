@@ -1,10 +1,9 @@
-let handler = async(m, { conn, text }) => {
-if (!text) return conn.reply(m.chat, 'Silahkan masukan query', m)
-let tetete = `https://api.zacros.my.id/search/alphacoders?query=${text}`
-conn.sendButtonImg(m.chat, tetete, `Hasil Dari ${text}`, wm2, 'Thanks', 'thanks', m) 
-}
-handler.help = ['freefire', 'mobilelegends', 'speedsdrifters', 'pubg', 'arenaofvalor', 'leagueoflegends', 'apexlegends', 'genshinimpact', 'honkaiimpact3', 'callofduty', 'onepunchman', 'payment', 'formatorder', 'promo', 'infoupdate', 'tutorial']
-handler.tags = ['gamestore']
-handler.command = /^(gamestore)$/i
+//percobaan
+let handler = async (m, { conn, command, text }) => {
+  let anu = handler.help = ['freefire', 'mobilelegends', 'speedsdrifters', 'pubg', 'arenaofvalor', 'leagueoflegends', 'apexlegends', 'genshinimpact', 'honkaiimpact3', 'callofduty', 'onepunchman', 'payment', 'formatorder', 'promo', 'infoupdate', 'tutorial']
+conn.sendBut(m.chat, anu, wm2, 'Format Order', 'huuu', `.${command}`, m)
 
-module.exports = handler
+}
+handler.help = ['gamestore']
+handler.tags = ['store']
+handler.command = /^gamestore$/i
