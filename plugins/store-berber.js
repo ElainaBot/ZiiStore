@@ -30,20 +30,13 @@ let handler = async m => m.reply(`
 ⫹⫺ Orang Tua
 ⫹⫺ Kesabaran
 ⫹⫺ Penyemangat
-⫹⫺ Nurutomo
-⫹⫺ Ilmanhdyt
-⫹⫺ Elyas
-⫹⫺ Hyzer
-⫹⫺ KrizynOfc
-⫹⫺ RielgansOfc
-⫹⫺ ArullOfc
 ⫹⫺ Zii-ID
 ╰─────────────⬣
 `.trim()) // Tambah sendiri kalo mau
 
-handler.help = ['berber']
+handler.help = ['jasaberber']
 handler.tags = ['store']
-handler.command = /^berber$/i
+handler.command = /^jasaberber$/i
 handler.register =false
 
 module.exports = handler
