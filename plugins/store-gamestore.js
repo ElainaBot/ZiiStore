@@ -1,9 +1,8 @@
 //percobaan
 let handler = async (m, { conn, command, text }) => {
-  let anu = handler.help = ['freefire', 'mobilelegends', 'speedsdrifters', 'pubg', 'arenaofvalor', 'leagueoflegends', 'apexlegends', 'genshinimpact', 'honkaiimpact3', 'callofduty', 'onepunchman', 'payment', 'formatorder', 'promo', 'infoupdate', 'tutorial']
-conn.sendBut(m.chat, anu, wm2, 'Format Order', 'huuu', `.${command}`, m)
-
+  let nyenye = `https://api.lolhuman.xyz/api/random/nsfw/${command}?apikey=${lolkey}` 
+conn.sendBut(m.chat, nyenye, wm2, 'Format Order', 'huuu', `.${command}`, m)
 }
-handler.help = ['gamestore']
+handler.help = ['freefire', 'mobilelegends', 'speedsdrifters', 'pubg', 'arenaofvalor', 'leagueoflegends', 'apexlegends', 'genshinimpact', 'honkaiimpact3', 'callofduty', 'onepunchman', 'payment', 'formatorder', 'promo', 'infoupdate', 'tutorial']
 handler.tags = ['store']
 handler.command = /^gamestore$/i
