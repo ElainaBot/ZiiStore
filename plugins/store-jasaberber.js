@@ -44,4 +44,20 @@ handler.tags = ['store']
 handler.command = /^jasaberber$/i
 handler.register =false
 
+
+ try {
+    let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))
+    let who
+    if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
+    else who = m.sender 
+    let name = conn.getName(m.sender)
+    let totalreg = Object.keys(global.db.data.users).length
+    let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length
+    let premium = global.db.data.users[m.sender].premium
+    let user = global.db.data.users[who]
+    let { exp, limit, level, money, role } = global.db.data.users[m.sender]
+    let { min, xp, max } = levelling.xpRange(level, global.multiplier)
+    let tag = `wa.me/${m.sender.split('@')[0]}`
+ m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
+
 module.exports = handler
