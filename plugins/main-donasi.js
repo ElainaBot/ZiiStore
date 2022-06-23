@@ -4,13 +4,18 @@ let teks = 'DONATE BOT'
 let dana = global.dana
 let pulsa = global.pulsa
 let gopay = global.gopay
+let ovo = global.ovo
+let linkaja = global.linkaja
+let shopeepay = global.shopeepay 
 let numberowner = global.numberowner
 let anu = `Hallo mypren 👋
 Kalian bisa mendukung saya agar bot ini tetap up to date dengan:
 ┌〔 Donasi • Emoney 〕
 ├ Dana : ${dana}
-├ Pulsa : ${pulsa}
+├ Ovo  : ${ovo}
 ├ Gopay : ${gopay}
+├ Linkaja : ${linkaja}
+├ Shopeepay : ${shopeepay}
 └────
 Berapapun donasi kalian akan sangat berarti 👍
 
