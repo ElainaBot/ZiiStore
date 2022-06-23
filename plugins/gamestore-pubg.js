@@ -42,7 +42,7 @@ let handler = async m => m.reply(`
 ⫹⫺ ArullOfc
 ⫹⫺ Zii-ID
 ╰─────────────⬣
-`.trim(conn.sendbuttonimg(m.chat, wm2, 'FormatOrder', `.${command}`, m))) // Tambah sendiri kalo mau
+`.trim(conn.sendbuttonimg)) // Tambah sendiri kalo mau
 
 handler.help = ['pubg']
 handler.tags = ['gamestore']
