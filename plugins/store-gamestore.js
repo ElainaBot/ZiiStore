@@ -34,15 +34,6 @@ let handler = async m => m.reply(`
 ┃⫹⫺ InfoUpdate
 ┃⫹⫺ Tutorial (Cara.Melakukan.Pembelian)
 └───────────㉿
-
-
-╭──〔  THANKS TO  〕─⬣
-⫹⫺ Allah SWT
-⫹⫺ Orang Tua
-⫹⫺ Kesabaran
-⫹⫺ Penyemangat
-⫹⫺ Zii-ID
-╰─────────────⬣
 `.trim()) // Tambah sendiri kalo mau
 
 handler.help = ['gamestore']
