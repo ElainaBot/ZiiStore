@@ -43,7 +43,7 @@ const defaultMenu = {
   header: '╭─㉿ 〔 %category 〕 ㉿─\n┃',
   body: '┃⫹⫺ %cmd %islimit %isPremium',
   footer: '┃\n╰────────㉿\n', 
-  footerText: 'Powered by ᯤ ʀɪᴇʟɢᴀɴs ᴏғᴄ',
+  footerText: 'Powered by ᯤ Zii-ID',
   after: `
 ╭──〔  THANKS TO  〕─⬣
 ⫹⫺ Allah SWT
@@ -57,6 +57,7 @@ const defaultMenu = {
 ⫹⫺ KrizynOfc
 ⫹⫺ RielgansOfc
 ⫹⫺ ArullOfc
+⫹⫺ Zii-ID
 ╰─────────────⬣
 `,
 }
@@ -65,62 +66,38 @@ const defaultMenu = {
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'absen', 'rpg', 'anime', 'downloader', 'game', 'fun', 'xp', 'github', 'group', 'image', 'quotes', 'admin', 'info', 'internet', 'islam', 'kerang', 'maker', 'owner', 'suara', 'premium', 'quotes', 'info', 'stalk', 'shortlink', 'sticker', 'tools', 'text', 'nsfw', 'asupan', 'random', 'textpro', 'photooxy']
+  let arrayMenu = ['all', 'absen', 'store', 'downloader', 'github', 'group', 'image', 'quotes', 'admin', 'info', 'islam', 'owner', 'info', 'stalk', 'shortlink', 'sticker', 'tools']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
   'main': 'UTAMA',
   'advanced': 'ADVANCED',
   'absen': 'ABSEN',
-  'anime': 'ANIME',
+  'store': 'STORE',
   'sticker': 'STICKER & CONVERT',
   'downloader': 'DOWNLOADER',
-  'xp': 'EXP & LIMIT',
-  'fun': 'FUN',
-  'game': 'GAME',
   'github': 'GITHUB',
   'group': 'GROUP',
   'image': 'IMAGE',
   'info': 'INFO',
-  'internet': 'INTERNET',
   'islam' : 'ISLAMI',
-  'kerang': 'KERANG',
-  'maker': 'MAKER',
   'owner': 'OWNER',
-  'Pengubah Suara': 'PENGUBAH SUARA',
-  'premium': 'PREMIUM',
   'quotes' : 'QUOTES',
-  'rpg': 'RPG',
   'stalk': 'STALK',
   'shortlink': 'SHORT LINK',
   'tools': 'TOOLS',
-  'vote': 'VOTING',
-  'nsfw': 'NSFW', 
-  'asupan': 'ASUPAN', 
-  'random': 'RANDOM', 
-  'textpro': 'TEXT PRO', 
-  'photooxy': 'PHOTO OXY', 
   }
   if (teks == 'absen') tags = {
     'absen': 'ABSEN',
     'vote': 'VOTING',
   }
-  if (teks == 'anime') tags = {
-  'anime': 'MANIME',
+  if (teks == 'store') tags = {
+  'store': 'STORE',
   }
   if (teks == 'sticker') tags = {
   'sticker': 'STICKER &CONVERT',
   }
   if (teks == 'downloader') tags = {
   'downloader': 'DOWNLOADER',
-  }
-  if (teks == 'xp') tags = {
-  'xp': 'EXP & LIMIT',
-  }
-  if (teks == 'fun') tags = {
-  'fun': 'MENU FUN',
-  }
-  if (teks == 'game') tags = {
-  'game': 'GAME',
   }
   if (teks == 'github') tags = {
   'github': 'GITHUB',
@@ -134,37 +111,16 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'info') tags = {
   'info': 'INFO',
   }
-  if (teks == 'internet') tags = {
-  'internet': 'INTERNET',
-  }
   if (teks == 'islam') tags = {
   'islam' : 'ISLAMI',
-  }
-  if (teks == 'kerang') tags = {
-  'kerang': 'KERANG',
-  }
-  if (teks == 'maker') tags = {
-  'maker': 'MAKER',
   }
   if (teks == 'owner') tags = {
     'owner': 'Owner',
     'host': 'Host',
     'advanced': 'Advanced'
   }
-  if (teks == 'suara') tags = {
-  'Pengubah Suara': 'PENGUBAH SUARA',
-  }
-  if (teks == 'text') tags = {
-  'text': 'MAKER TEXT',
-  }
-  if (teks == 'premium') tags = {
-  'premium': 'PREMIUM',
-  }
   if (teks == 'quotes') tags = {
   'quotes' : 'QUOTES',
-  }
-  if (teks == 'rpg') tags = {
-  'rpg': 'RPG',
   }
   if (teks == 'stalk') tags = {
   'stalk': 'STALK',
@@ -173,22 +129,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   'shortlink': 'SHORT LINK',
   }
   if (teks == 'tools') tags = {
-  'tools': 'TOOLS',
-  }
-  if (teks == 'nsfw') tags = {
-  'nsfw': 'NSFW', 
-  }
-  if (teks == 'asupan') tags = {
-  'asupan': 'ASUPAN', 
-  }
-  if (teks == 'random') tags = {
-  'random': 'RANDOM', 
-  }
-  if (teks == 'textpro') tags = {
-  'textpro': 'TEXT PRO', 
-  }
-  if (teks == 'photooxy') tags = {
-  'photooxy': 'PHOTO OXY', 
+  'tools': 'TOOLS', 
   }
 
 //━━━━━━━━[ DATABASE USER ]━━━━━━━━//
@@ -336,9 +277,9 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Menampilkan Menu Absen",
                   "rowId": `${_p}? absen`
                 }, {
-                  "title": "☰ ANIME MENU",
+                  "title": "☰ STORE",
                   "description": "Menampilkan Menu Anime",
-                  "rowId": `${_p}? anime`
+                  "rowId": `${_p}? store`
                 }, {
                   "title": "☰ STICKER  MENU",
                   "description": "Menampilkan Menu Sticker",
@@ -347,18 +288,6 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "title": "☰ DOWNLOAD MENU",
                   "description": "Menampilkan Menu Downloader",
                   "rowId": `${_p}? downloader`
-                }, {
-                  "title": "☰ EXP & LIMIT MENU",
-                  "description": "Menampilkan Menu Exp",
-                  "rowId": `${_p}? xp`
-                }, {
-                  "title": "☰ FUN MENU",
-                  "description": "Menampilkan Menu Fun",
-                  "rowId": `${_p}? fun`
-                }, {
-                  "title": "☰ GAME MENU",
-                  "description": "Menampilkan Menu Game",
-                  "rowId": `${_p}? game`
                 }, {
                   "title": "☰ GITHUB MENU",
                   "description": "Menampilkan Menu Github",
@@ -372,41 +301,17 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Menampilkan Menu Image",
                   "rowId": `${_p}? image`
                 }, {
-                  "title": "☰ INTERNET MENU",
-                  "description": "Menampilkan Menu Internet",
-                  "rowId": `${_p}? internet`
-                }, {
                   "title": "☰ ISLAMIC MENU",
                   "description": "Menampilkan Menu Islam",
                   "rowId": `${_p}? islam`
-                }, {
-                  "title": "☰ KERANG MENU",
-                  "description": "Menampilkan Menu Kerang",
-                  "rowId": `${_p}? kerang`
-                }, {
-                  "title": "☰ MAKER MENU",
-                  "description": "Menampilkan Menu Maker",
-                  "rowId": `${_p}? maker`
                 }, {
                   "title": "☰ OWNER MENU",
                   "description": "Menampilkan Menu Owner",
                   "rowId": `${_p}? owner`
                 }, {
-                  "title": "☰ CHANGE VOICE MENU",
-                  "description": "Menampilkan Menu Voice Changer",
-                  "rowId": `${_p}? suara`
-                }, {
-                  "title": "☰ PREMIUM MENU",
-                  "description": "Menampilkan Menu Premium",
-                  "rowId": `${_p}? premium`
-                }, {
                   "title": "☰ QUOTES MENU",
                   "description": "Menampilkan Menu Quotes",
                   "rowId": `${_p}? quotes`
-                }, {
-                  "title": "☰ RPG MENU",
-                  "description": "Menampilkan Menu Rpg",
-                  "rowId": `${_p}? rpg`
                 }, {
                   "title": "☰ STALKER MENU",
                   "description": "Menampilkan Menu Stalker",
@@ -419,26 +324,6 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "title": "☰ TOOLS MENU",
                   "description": "Menampilkan Menu Tools",
                   "rowId": `${_p}? tools`
-                }, {
-                  "title": "☰ TEXT MAKER MENU",
-                  "description": "Menampilkan Maker Text",
-                  "rowId": `${_p}? text`
-                }, {
-                  "title": "☰ HENTAI MENU",
-                  "description": "Menampilkan Menu Hentai",
-                  "rowId": `${_p}? nsfw`
-                }, {
-                  "title": "☰ RANDOM MENU",
-                  "description": "Menampilkan Menu Random/Gabut",
-                  "rowId": `${_p}? random`
-                }, {
-                  "title": "☰ TEXT PRO MENU",
-                  "description": "Menampilkan Text Pro Menu",
-                  "rowId": `${_p}? textpro`
-                }, {
-                  "title": "☰ PHOTO OXY MENU",
-                  "description": "Menampilkan Photo Oxy Menu",
-                  "rowId": `${_p}? textpro`
                 }
                   ],
                 "title": "⤿LIST MENU"
