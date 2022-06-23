@@ -4,6 +4,6 @@ let nyenye = `https://api-reysekha.herokuapp.com/api/wallpaper/${command}?apikey
 }
 handler.help = ['gamestore', 'rekber', 'jaspost']
 handler.tags = ['store']
-handler.command = /^(gamestore|rekber|jaspost|)$/i
+handler.command = /^MALES$/i
 //buatan hyzer, jgn hapus 🗿
 module.exports = handler
