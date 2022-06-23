@@ -66,7 +66,7 @@ const defaultMenu = {
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'absen', 'store', 'downloader', 'github', 'group', 'image', 'quotes', 'admin', 'info', 'islam', 'owner', 'info', 'stalk', 'sticker']
+  let arrayMenu = ['all', 'absen', 'store', 'downloader', 'github', 'group', 'quotes', 'admin', 'info', 'islam', 'owner', 'info', 'stalk', 'sticker']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
   'main': 'UTAMA',
@@ -84,10 +84,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   'quotes' : 'QUOTES',
   'stalk': 'STALK',
   }
-  if (teks == 'absen') tags = {
-    'absen': 'ABSEN',
-    'vote': 'VOTING',
-  }
   if (teks == 'store') tags = {
   'store': 'STORE',
   }
@@ -102,9 +98,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   }
   if (teks == 'group') tags = {
   'group': 'GROUP',
-  }
-  if (teks == 'image') tags = {
-  'image': 'IMAGE',
   }
   if (teks == 'info') tags = {
   'info': 'INFO',
@@ -288,10 +281,6 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "title": "☰ GROUP MENU",
                   "description": "Menampilkan Menu Group",
                   "rowId": `${_p}? group`
-                }, {
-                  "title": "☰ IMAGE MENU",
-                  "description": "Menampilkan Menu Image",
-                  "rowId": `${_p}? image`
                 }, {
                   "title": "☰ ISLAMIC MENU",
                   "description": "Menampilkan Menu Islam",
