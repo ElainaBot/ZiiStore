@@ -49,40 +49,8 @@ let handler = async m => m.reply(`
 ⫹⫺ RielgansOfc
 ⫹⫺ ArullOfc
 ⫹⫺ Zii-ID
-╰─────────────⬣`
-
-const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fromObject({
-        listMessage: {
-            title: `*${ucapan()} ${name}*`,
-            description: menuu,
-            buttonText: '𝐊𝐋𝐈𝐊 𝐃𝐈𝐒𝐈𝐍𝐈',
-            listType: 1,
-            footerText: "Zii-ID",
-            mtype: 'listMessage',
-            sections: [
-              {
-      
-                "rows": [{
-                  "title": `☰ ALL MENU`,
-                  "description": "Menampilkan Menu All",
-                  "rowId": '.? all'
-                  }, {
-                  "title": "☰ ABSEN MENU",
-                  "description": "Menampilkan Menu Absen",
-                  "rowId": `${_p}? absen`
-                }
-], "contextInfo": {
-              "stanzaId": m.key.id,
-              "participant": m.sender,
-              "quotedMessage": m.message
-            }
-}}), { userJid: m.participant || m.key.remoteJid, quoted: fkontak });
-    return await conn.relayMessage(
-        m.key.remoteJid,
-        template.message,
-        { messageId: template.key.id }
-    )
-    }.trim()) // Tambah sendiri kalo mau
+╰─────────────⬣
+`.trim()) // Tambah sendiri kalo mau
 
 handler.help = ['gamestore']
 handler.tags = ['store']
