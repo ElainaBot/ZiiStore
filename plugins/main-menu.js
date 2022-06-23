@@ -308,14 +308,6 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "title": "☰ STALKER MENU",
                   "description": "Menampilkan Menu Stalker",
                   "rowId": `${_p}? stalk`
-                }, {
-                  "title": "☰ SHORT LINK MENU",
-                  "description": "Menampilkan Menu Short Link",
-                  "rowId": `${_p}? shortlink`
-                }, {
-                  "title": "☰ TOOLS MENU",
-                  "description": "Menampilkan Menu Tools",
-                  "rowId": `${_p}? tools`
                 }
                   ],
                 "title": "⤿LIST MENU"
