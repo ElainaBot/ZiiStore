@@ -42,7 +42,10 @@ let handler = async m => m.reply(`
 ⫹⫺ ArullOfc
 ⫹⫺ Zii-ID
 ╰─────────────⬣
-`.trim(conn.sendbuttonimg)) // Tambah sendiri kalo mau
+`.trim(
+conn.sendimg
+)
+) // Tambah sendiri kalo mau
 
 handler.help = ['pubg']
 handler.tags = ['gamestore']
