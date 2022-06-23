@@ -1,5 +1,5 @@
 let handler = async m => m.reply(`
-╭──〔  *SOEEDS DRIFTERS*  〕─⬣
+╭──〔  *SPEEDS DRIFTERS*  〕─⬣
 ┃➵͜͡✪ Via     : VIA USER ID
 ┃➵͜͡✪ Status : OPEN
 ┃➵͜͡✪ Jam kerja : 08:00-22:00 WIB
