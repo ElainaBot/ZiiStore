@@ -263,7 +263,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
             description: menuu,
             buttonText: '𝐊𝐋𝐈𝐊 𝐃𝐈𝐒𝐈𝐍𝐈',
             listType: 1,
-            footerText: "ᴀʀᴜʟʟᴏꜰᴄ",
+            footerText: "Zii-ID",
             mtype: 'listMessage',
             sections: [
               {
@@ -278,7 +278,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "rowId": `${_p}? absen`
                 }, {
                   "title": "☰ STORE",
-                  "description": "Menampilkan Menu Anime",
+                  "description": "Menampilkan Menu Store",
                   "rowId": `${_p}? store`
                 }, {
                   "title": "☰ STICKER  MENU",
