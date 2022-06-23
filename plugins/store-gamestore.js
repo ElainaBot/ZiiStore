@@ -18,8 +18,15 @@ let handler = async (m, { conn, command, text }) => {
 ┃⫹⫺ InfoUpdate
 ┃⫹⫺ Tutorial (Cara.Melakukan.Pembelian)
 └────` 
-conn.sendBut(m.chat, anu, wm2, 'Format Order', 'huuu', `.${command}`, m)
+conn.sendBut(m.chat, anu, wm2, 'Format Order', `.${command}`, m)
 }
-handler.help = ['freefire', 'mobilelegends', 'speedsdrifters', 'pubg', 'arenaofvalor', 'leagueoflegends', 'apexlegends', 'genshinimpact', 'honkaiimpact3', 'callofduty', 'onepunchman', 'payment', 'formatorder', 'promo', 'infoupdate', 'tutorial']
-handler.tags = ['store']
 handler.command = /^gamestore$/i
+handler.owner = false
+handler.mods = false
+handler.premium = false
+handler.group = false
+handler.private = false
+handler.admin = false
+handler.botAdmin = false
+handler.fail = null
+module.exports = handler
