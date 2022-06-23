@@ -66,18 +66,16 @@ const defaultMenu = {
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'absen', 'store', 'downloader', 'github', 'group', 'quotes', 'admin', 'info', 'islam', 'owner', 'info', 'stalk', 'sticker']
+  let arrayMenu = ['all', 'store', 'downloader', 'github', 'group', 'quotes', 'admin', 'info', 'islam', 'owner', 'info', 'stalk', 'sticker']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
   'main': 'UTAMA',
   'advanced': 'ADVANCED',
-  'absen': 'ABSEN',
   'store': 'STORE',
   'sticker': 'STICKER & CONVERT',
   'downloader': 'DOWNLOADER',
   'github': 'GITHUB',
-  'group': 'GROUP',
-  'image': 'IMAGE',
+  'group': 'GROUP', 
   'info': 'INFO',
   'islam' : 'ISLAMI',
   'owner': 'OWNER',
@@ -115,6 +113,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   }
   if (teks == 'stalk') tags = {
   'stalk': 'STALK', 
+  }
+if (teks == 'gamestore') tags = {
+  'nsfw': 'GAMESTORE', 
   }
 
 //━━━━━━━━[ DATABASE USER ]━━━━━━━━//
