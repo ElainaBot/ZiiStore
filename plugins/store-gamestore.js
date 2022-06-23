@@ -1,23 +1,6 @@
 //percobaan
 let handler = async (m, { conn, command, text }) => {
-  let anu = `┌─────「 ⫹⫺ MENU GAMESTORE 」
-┃⫹⫺ FreeFire
-┃⫹⫺ MobileLegends
-┃⫹⫺ Pubg
-┃⫹⫺ SpeedsDrifters 
-┃⫹⫺ ApexLegends
-┃⫹⫺ GenshinImpact
-┃⫹⫺ HonkaiImpact
-┃⫹⫺ CallOfDutyMobile
-┃⫹⫺ LeagueOfLegends
-┃⫹⫺ ArenaOfValor
-┃⫹⫺ OnePunchMan
-┃⫹⫺ Payment
-┃⫹⫺ FormatOrder
-┃⫹⫺ Promo
-┃⫹⫺ InfoUpdate
-┃⫹⫺ Tutorial (Cara.Melakukan.Pembelian)
-└────` 
+  let anu = '┌─────「 ⫹⫺ MENU GAMESTORE 」\n┃⫹⫺ FreeFire\n┃⫹⫺ MobileLegends\n┃⫹⫺ Pubg\n┃⫹⫺ SpeedsDrifters \n┃⫹⫺ ApexLegends\n┃⫹⫺ GenshinImpact\n┃⫹⫺ HonkaiImpact\n┃⫹⫺ CallOfDutyMobile\n┃⫹⫺ LeagueOfLegends\n┃⫹⫺ ArenaOfValor\n┃⫹⫺ OnePunchMan\n┃⫹⫺ Payment\n┃⫹⫺ FormatOrder\n┃⫹⫺ Promo\n┃⫹⫺ InfoUpdate\n┃⫹⫺ Tutorial (Cara.Melakukan.Pembelian)\n└────' 
 conn.sendBut(m.chat, anu, wm2, 'Format Order', `.${command}`, m)
 }
 handler.command = /^gamestore$/i
