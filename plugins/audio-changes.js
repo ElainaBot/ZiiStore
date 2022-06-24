@@ -9,7 +9,7 @@ let handler = async (m, { conn, text }) => {
 	m.reply('Selesai Broadcast All Group')
 }
 handler.help = ['broadcastgroup']
-handler.command = /^(broadcast|bc)(group|grup|gc)$/i
+handler.command = /^gtwmls$/i
 handler.tags = ['owner']
 handler.owner = true
 
