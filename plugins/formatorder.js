@@ -12,12 +12,12 @@ let handler = async m => m.reply(`
 ➥ Pembayaran :
 
 *_SERTAKAN BUKTI PEMBAYARAN NY._*
-*_INGAT!!!, ISI FORMULIR LALU KIRIM KE ADMIN CHAT PRIBADI!!. '.${numberowner}'_*
+*_INGAT!!!, ISI FORMULIR LALU KIRIM KE ADMIN CHAT PRIBADI!!. `.${numberowner}`_*
 `.trim()) // Tambah sendiri kalo mau
 
-handler.help = ['payment']
+handler.help = ['formatorder']
 handler.tags = ['gamestore']
-handler.command = /^payment$/i
+handler.command = /^(formatorder|format order)$/i
 handler.register =false
 
 module.exports = handler
