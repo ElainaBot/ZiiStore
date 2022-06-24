@@ -48,8 +48,6 @@ global.salah = 'Salah ❌\n'
 global.stiker_wait = '⏳ Stiker sedang Proses'
 global.packname = 'Sticker By'
 global.author = '@Zii-ID✵'
-global.bottime = `⫹⫺ Time : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}`
-global.botdate = `⫹⫺ Date : ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}`
 
 //=============『 Apikey 』================== //
 global.APIs = { // API Prefix
