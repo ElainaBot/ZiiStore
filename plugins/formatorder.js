@@ -1,8 +1,8 @@
 let handler = async m => m.reply(`
 𒆜#Format Order
 
-⏳Time: ${bottime}
-📅Date: ${botdate}
+⏳Time: ${time}
+📅Date: ${date}
 
 ➥ Paket Games :
 ➥ Nickname :
