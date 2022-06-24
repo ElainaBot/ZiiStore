@@ -1,11 +1,39 @@
-let handler  = async (m, { conn }) => {
-  	await m.reply('\n╭─㉿ 〔⫹⫺ MENU GAMESTORE〕 ㉿─\n┃⫹⫺ FreeFire\n┃⫹⫺ MobileLegends\n┃⫹⫺ Pubg\n┃⫹⫺ SpeedsDrifters \n┃⫹⫺ ApexLegends\n┃⫹⫺ GenshinImpact\n┃⫹⫺ HonkaiImpact\n┃⫹⫺ CallOfDutyMobile\n┃⫹⫺ LeagueOfLegends\n┃⫹⫺ ArenaOfValor\n┃⫹⫺ OnePunchMan\n┃⫹⫺ Payment\n┃⫹⫺ FormatOrder\n┃⫹⫺ Promo\n┃⫹⫺ InfoUpdate\n┃⫹⫺ Tutorial _(Cara.Melakukan.Pembelian)_\n└───────────㉿\n╭──〔  THANKS TO  〕─⬣\n⫹⫺ Allah SWT\n⫹⫺ Orang Tua\n⫹⫺ Kesabaran\n⫹⫺ Penyemangat\n⫹⫺ Nurutomo\n⫹⫺ Ilmanhdyt\n⫹⫺ Elyas\n⫹⫺ Hyzer\n⫹⫺ KrizynOfc\n⫹⫺ RielgansOfc\n⫹⫺ ArullOfc\n⫹⫺ Zii-ID\n╰─────────────⬣
-')
-conn.sendButtonimg(m.chat, reply, wm2, 'next', `.${before}`, m) // Tambah sendiri kalo mau
+let handler = async m => m.reply(`
+╭─㉿ 〔⫹⫺ MENU GAMESTORE〕 ㉿─
+┃⫹⫺ FreeFire
+┃⫹⫺ MobileLegends
+┃⫹⫺ Pubg
+┃⫹⫺ SpeedsDrifters 
+┃⫹⫺ ApexLegends
+┃⫹⫺ GenshinImpact
+┃⫹⫺ HonkaiImpact
+┃⫹⫺ CallOfDutyMobile
+┃⫹⫺ LeagueOfLegends
+┃⫹⫺ ArenaOfValor
+┃⫹⫺ OnePunchMan
+┃⫹⫺ Payment
+┃⫹⫺ FormatOrder
+┃⫹⫺ Promo
+┃⫹⫺ InfoUpdate
+┃⫹⫺ Tutorial (Cara.Melakukan.Pembelian)
+└───────────㉿
+╭──〔  THANKS TO  〕─⬣
+⫹⫺ Allah SWT
+⫹⫺ Orang Tua
+⫹⫺ Kesabaran
+⫹⫺ Penyemangat
+⫹⫺ Nurutomo
+⫹⫺ Ilmanhdyt
+⫹⫺ Elyas
+⫹⫺ Hyzer
+⫹⫺ KrizynOfc
+⫹⫺ RielgansOfc
+⫹⫺ ArullOfc
+⫹⫺ Zii-ID
+╰─────────────⬣
+`.trim()) // Tambah sendiri kalo mau
 
 handler.help = ['gamestore']
 handler.tags = ['store']
 handler.command = /^gamestore$/i
 handler.register =false
-
-module.exports = handler
