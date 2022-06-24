@@ -14,7 +14,18 @@ let handler = async m => m.reply(`
 ┃⫹⫺ OVO : ${ovo}
 ┃⫹⫺ LINKAJA : ${linkaja}
 ┃⫹⫺ SHOPEEPAY : ${shopeepay}
-┃⫹⫺ 
+┃──〔  *BANK*  〕─⬣
+┃⫹⫺ BNI (VIA DANA)
+┃⫹⫺ BRI (VIA DANA)
+┃⫹⫺ BCA (VIA DANA)
+┃⫹⫺ BJB (VIA DANA)
+┃⫹⫺ MANDIRI (VIA DANA)
+┃──〔  *MINIMARKET*  〕─⬣
+┃⫹⫺ INDOMARET
+┃⫹⫺ ALFAMART
+┃──〔  *QR/QRIS*  〕─⬣
+┃⫹⫺ QR SPEEDS DRIFTERS
+┃⫹⫺ QR ALL GAME (BLM TERSEDIA)
 └───────────㉿
 ╭──〔  THANKS TO  〕─⬣
 ⫹⫺ Allah SWT
