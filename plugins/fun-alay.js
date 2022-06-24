@@ -16,6 +16,6 @@ function handler(m, { text }) {
 }
 handler.help = ['tyfghf']
 handler.tags = ['fun']
-handler.command = ['gtw']
+handler.command = ['sayank']
 
 module.exports = handler
