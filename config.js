@@ -48,7 +48,6 @@ global.salah = 'Salah ❌\n'
 global.stiker_wait = '⏳ Stiker sedang Proses'
 global.packname = 'Sticker By'
 global.author = '@Zii-ID✵'
-global.date = `d.toLocaleDateString(locale, {day: 'numeric', month: 'long', year: 'numeric'})`
 
 //=============『 Apikey 』================== //
 global.APIs = { // API Prefix
