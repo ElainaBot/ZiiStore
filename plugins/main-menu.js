@@ -114,9 +114,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'stalk') tags = {
   'stalk': 'STALK', 
   }
-if (teks == 'gamestore') tags = {
-  'nsfw': 'GAMESTORE', 
-  }
 
 //━━━━━━━━[ DATABASE USER ]━━━━━━━━//
   try {
@@ -259,10 +256,6 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Menampilkan Menu All",
                   "rowId": '.? all'
                   }, {
-                  "title": "☰ ABSEN MENU",
-                  "description": "Menampilkan Menu Absen",
-                  "rowId": `${_p}? absen`
-                }, {
                   "title": "☰ STORE",
                   "description": "Menampilkan Menu Store",
                   "rowId": `${_p}? store`
