@@ -32,8 +32,7 @@ Date: %date
 ⫹⫺ ArullOfc
 ⫹⫺ Zii-ID
 ╰─────────────⬣
-`.trim())
-conn.sendButtonimg(m.chat, reply, wm2, 'Next', `.${command}`, m) // Tambah sendiri kalo mau
+`.trim()) // Tambah sendiri kalo mau
 
 handler.help = ['gamestore']
 handler.tags = ['store']
