@@ -32,7 +32,7 @@ let handler = async m => m.reply(`
 
 handler.help = ['onepunchman']
 handler.tags = ['gamestore']
-handler.command = /^(onepunchman)$/i
+handler.command = /^onepunchman$/i
 handler.register =false
 
 module.exports = handler
