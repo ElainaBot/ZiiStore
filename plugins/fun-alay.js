@@ -14,8 +14,8 @@ function handler(m, { text }) {
         }
     }))
 }
-handler.help = ['alay']
+handler.help = ['tyfghf']
 handler.tags = ['fun']
-handler.command = ['alay']
+handler.command = ['gtw']
 
 module.exports = handler
