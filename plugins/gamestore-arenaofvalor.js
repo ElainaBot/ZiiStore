@@ -32,9 +32,9 @@ let handler = async m => m.reply(`
 ╰─────────────⬣
 `.trim()) // Tambah sendiri kalo mau
 
-handler.help = ['leagueoflegends']
+handler.help = ['arenaofvalor']
 handler.tags = ['gamestore']
-handler.command = /^(leagueoflegends|lol)$/i
+handler.command = /^arenaofvalor$/i
 handler.register =false
 
 module.exports = handler
