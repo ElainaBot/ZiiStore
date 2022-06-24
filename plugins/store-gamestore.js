@@ -37,3 +37,5 @@ handler.help = ['gamestore']
 handler.tags = ['store']
 handler.command = /^gamestore$/i
 handler.register =false
+
+module.exports = handler
