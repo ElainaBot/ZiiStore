@@ -1,9 +1,23 @@
-let handler = async(m,{text, conn}) => {
-let supa = 'https://api.zacros.my.id/asupan/santuy'
-conn.sendFile(m.chat, supa, null, 'Nih', m)
-}
-handler.help = ['santuy']
-handler.tags = ['asupan']
-handler.command = /^(santuy)$/i
+let handler = async m => m.reply(`
+𒆜#Format Order
+
+⏳Time: %hour_of_day%:%minute%
+📅Date: %day_of_week% %day_of_month% %month_name% %year%
+
+➥ Paket Games :
+➥ Nickname :
+➥ UserID :
+➥ Top Up :
+➥ Harga :
+➥ Pembayaran :
+
+*_SERTAKAN BUKTI PEMBAYARAN NY._*
+*_INGAT!!!, ISI FORMULIR LALU KIRIM KE ADMIN CHAT PRIBADI!!. '.${numberowner}'_*
+`.trim()) // Tambah sendiri kalo mau
+
+handler.help = ['payment']
+handler.tags = ['gamestore']
+handler.command = /^payment$/i
+handler.register =false
 
 module.exports = handler
