@@ -1,9 +1,6 @@
 let handler = async m => m.reply(`
 𒆜#Format Order
 
-⏳Time: %time
-📅Date: %date
-
 ➥ Paket Games :
 ➥ Nickname :
 ➥ UserID :
@@ -12,7 +9,7 @@ let handler = async m => m.reply(`
 ➥ Pembayaran :
 
 *_SERTAKAN BUKTI PEMBAYARAN NY._*
-*_INGAT!!!, ISI FORMULIR LALU KIRIM KE ADMIN CHAT PRIBADI!!. ${numberowner}_*
+*_INGAT!!!, ISI FORMULIR LALU KIRIM KE ADMIN CHAT PRIBADI!!. wa.me/62881022864785_*
 `.trim()) // Tambah sendiri kalo mau
 
 handler.help = ['formatorder']
