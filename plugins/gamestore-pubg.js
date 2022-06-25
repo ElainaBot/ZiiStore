@@ -28,18 +28,15 @@ let handler = async m => m.reply(`
 ┃⫹⫺ 825 UC = Rp 139.000
 ┃⫹⫺ 1100 UC = Rp 183.500
 └───────────㉿
+
+╭─㉿ 〔⫹⫺ *MELAKUKAN PEMBELIAN*  〕 ㉿─
+┃⫹⫺ Payment
+┃⫹⫺ FormatOrder
+└───────────㉿
+
 ╭──〔  THANKS TO  〕─⬣
 ⫹⫺ Allah SWT
 ⫹⫺ Orang Tua
-⫹⫺ Kesabaran
-⫹⫺ Penyemangat
-⫹⫺ Nurutomo
-⫹⫺ Ilmanhdyt
-⫹⫺ Elyas
-⫹⫺ Hyzer
-⫹⫺ KrizynOfc
-⫹⫺ RielgansOfc
-⫹⫺ ArullOfc
 ⫹⫺ Zii-ID
 ╰─────────────⬣
 `.trim(
