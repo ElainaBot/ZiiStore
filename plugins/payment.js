@@ -46,7 +46,10 @@ let handler = async m => m.reply(`
 ┃➵͜͡✪ DAN UNTUK PEMBAYARAN QRIS
 ┃⫹⫺ BISA LANGSUNG CHAT ADMIN
 ┃⫹⫺ INGAT YA QRIS DIKENAKAN PAJAK!!
+┃⫹⫺ DAN QRIS BISA DIGUNAKAN 1X!!
 ┃⫹⫺ PAJAK BISA RANDOM!
+┃⫹⫺ CONTOH: 22.500 MENJADI 23.414
+┃⫹⫺         50.000 MENJADI 51.108
 └───────────㉿
 ╭──〔  THANKS TO  〕─⬣
 ⫹⫺ Allah SWT
