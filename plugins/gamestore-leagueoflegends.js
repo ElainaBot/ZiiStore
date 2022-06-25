@@ -16,18 +16,17 @@ let handler = async m => m.reply(`
 ┃⫹⫺ 4000 WILD CORES = Rp 398.000
 ┃⫹⫺ 8150 WILD CORES = Rp 798.000
 └───────────㉿
+
+╭─㉿ 〔⫹⫺ *MELAKUKAN PEMBELIAN*  〕 ㉿─
+┃⫹⫺ Payment
+┃⫹⫺ FormatOrder
+└───────────㉿
+
 ╭──〔  THANKS TO  〕─⬣
 ⫹⫺ Allah SWT
 ⫹⫺ Orang Tua
 ⫹⫺ Kesabaran
 ⫹⫺ Penyemangat
-⫹⫺ Nurutomo
-⫹⫺ Ilmanhdyt
-⫹⫺ Elyas
-⫹⫺ Hyzer
-⫹⫺ KrizynOfc
-⫹⫺ RielgansOfc
-⫹⫺ ArullOfc
 ⫹⫺ Zii-ID
 ╰─────────────⬣
 `.trim()) // Tambah sendiri kalo mau
