@@ -16,18 +16,16 @@ let handler = async m => m.reply(`
 ┃⫹⫺ 6480 + 1600 GENESIS CRYSTAL = Rp 1.350.000
 ┃⫹⫺ BLEESING WELKIN MOON = Rp 66.500
 └───────────㉿
+╭─㉿ 〔⫹⫺ *MELAKUKAN PEMBELIAN*  〕 ㉿─
+┃⫹⫺ Payment
+┃⫹⫺ FormatOrder
+└───────────㉿
+
 ╭──〔  THANKS TO  〕─⬣
 ⫹⫺ Allah SWT
 ⫹⫺ Orang Tua
 ⫹⫺ Kesabaran
 ⫹⫺ Penyemangat
-⫹⫺ Nurutomo
-⫹⫺ Ilmanhdyt
-⫹⫺ Elyas
-⫹⫺ Hyzer
-⫹⫺ KrizynOfc
-⫹⫺ RielgansOfc
-⫹⫺ ArullOfc
 ⫹⫺ Zii-ID
 ╰─────────────⬣
 `.trim()) // Tambah sendiri kalo mau
