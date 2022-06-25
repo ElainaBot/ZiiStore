@@ -51,18 +51,16 @@ let handler = async m => m.reply(`
 ┃⫹⫺ M.Bulanan   💳 = Rp 148.500
 └───────────㉿
 
+╭─㉿ 〔⫹⫺ *MELAKUKAN PEMBELIAN*  〕 ㉿─
+┃⫹⫺ Payment
+┃⫹⫺ FormatOrder
+└───────────㉿
+
 ╭──〔  THANKS TO  〕─⬣
 ⫹⫺ Allah SWT
 ⫹⫺ Orang Tua
 ⫹⫺ Kesabaran
 ⫹⫺ Penyemangat
-⫹⫺ Nurutomo
-⫹⫺ Ilmanhdyt
-⫹⫺ Elyas
-⫹⫺ Hyzer
-⫹⫺ KrizynOfc
-⫹⫺ RielgansOfc
-⫹⫺ ArullOfc
 ⫹⫺ Zii-ID
 ╰─────────────⬣
 `.trim()) // Tambah sendiri kalo mau
