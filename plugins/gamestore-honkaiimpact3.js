@@ -24,18 +24,17 @@ let handler = async m => m.reply(`
 ┃⫹⫺1980   B-CHIPS = Rp 396.000
 ┃⫹⫺3300   B-CHIPS = Rp 665.000
 └───────────㉿
+
+╭─㉿ 〔⫹⫺ *MELAKUKAN PEMBELIAN*  〕 ㉿─
+┃⫹⫺ Payment
+┃⫹⫺ FormatOrder
+└───────────㉿
+
 ╭──〔  THANKS TO  〕─⬣
 ⫹⫺ Allah SWT
 ⫹⫺ Orang Tua
 ⫹⫺ Kesabaran
 ⫹⫺ Penyemangat
-⫹⫺ Nurutomo
-⫹⫺ Ilmanhdyt
-⫹⫺ Elyas
-⫹⫺ Hyzer
-⫹⫺ KrizynOfc
-⫹⫺ RielgansOfc
-⫹⫺ ArullOfc
 ⫹⫺ Zii-ID
 ╰─────────────⬣
 `.trim()) // Tambah sendiri kalo mau
