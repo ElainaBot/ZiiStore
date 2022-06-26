@@ -1,6 +1,9 @@
 let handler = async m => m.reply(`
 𒆜#Format Order
 
+TIME: ${waktuwib}
+DATE: ${date}
+
 ➥ Paket Games :
 ➥ Nickname :
 ➥ UserID :
