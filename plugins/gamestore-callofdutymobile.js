@@ -1,5 +1,5 @@
 let handler = async m => m.reply(`
-╭──〔  𝐅𝐑𝐄𝐄 𝐅𝐈𝐑𝐄  〕─⬣
+╭──〔  *CALL OF DUTY*  〕─⬣
 ┃➵͜͡✪ Via     : VIA USER ID
 ┃➵͜͡✪ Status : OPEN
 ┃➵͜͡✪ Jam kerja : 08:00-22:00 WIB
@@ -37,7 +37,7 @@ let handler = async m => m.reply(`
 
 handler.help = ['callofdutymobile']
 handler.tags = ['gamestore']
-handler.command = /^(callofduty|callofdutymobile)$/i
+handler.command = /^(callofduty|callofdutymobile|cod|codm)$/i
 handler.register =false
 
 module.exports = handler
