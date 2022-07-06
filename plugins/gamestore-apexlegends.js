@@ -30,9 +30,9 @@ let handler = async m => m.reply(`
 ╰─────────────⬣
 `.trim()) // Tambah sendiri kalo mau
 
-handler.help = ['onepunchman']
+handler.help = ['apexlegends']
 handler.tags = ['gamestore']
-handler.command = /^(onepunchman|opm)$/i
+handler.command = /^(apexlegends|apex)$/i
 handler.register =false
 
 module.exports = handler
